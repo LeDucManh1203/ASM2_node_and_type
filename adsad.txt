@@ -1,0 +1,54 @@
+    {
+      data.data?.map((data) =>  <div className="section-frame-Product-child">
+      <div className="section-frame-Product-child-image">
+        <img src="../Client/img/Cake1.webp"  />
+      </div>
+      <div className="section-frame-Product-child-title">
+        <div className="cookie-title">
+          <div className="cookie-titleh1">
+            <h1>Cat's tongue cookie</h1>
+          </div>
+          <div className="cookie-star">
+            <i className="fa-solid fa-star" style={{color: '#ffd00a'}} />
+            <i className="fa-solid fa-star" style={{color: '#ffd00a'}} />
+            <i className="fa-solid fa-star" style={{color: '#ffd00a'}} /> 
+            <i className="fa-solid fa-star" style={{color: '#ffd00a'}} />
+            <i className="fa-solid fa-star" style={{color: '#c7c5b9'}} />
+          </div>
+          <div className="cookie-description">
+            <div className="cookie-description-p">
+              <p>{data.description}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="section-frame-Product-child-bill">
+        <div className="section-frame-Product-child-bill-child">
+          <div className="price">
+            <div className="price-name">
+              <p>Cake Name : </p> <span>{data?.name}</span>
+            </div>
+            <div className="Pricelist">
+              <div className="Pricelist-price">
+                <p>${data?.price}.00</p>
+              </div>
+              <div className="Pricelist-FLAVOR">
+                <div className="Pricelist-FLAVOR-title">
+                  <p>FLAVOR</p>
+                </div>
+                <div className="Pricelist-FLAVOR-buttom">
+                  <span>Vanilla Bean</span>
+                  <span>Butter Peanut</span>
+                  <span>Peanut Butter</span>
+                </div>
+              </div>
+              <div className="Pricelist-Add">
+                <span><i className="fa-solid fa-cart-shopping" />Add To Card</span>
+                <span><i className="fa-sharp fa-regular fa-heart" />Add To Wishlist</span>    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>)
+     }
